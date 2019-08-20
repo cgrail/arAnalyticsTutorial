@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible"
+		  content="IE=edge" />
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no,minimum-scale=1.0, maximum-scale=1.0">
+
+	<title>Augmented Reality Analytics</title>
+
+	<script src="//mozilla.github.io/three.xr.js/vendor/three.js"></script>
+	<script src="utils/OrbitControls.js"></script>
+
+	<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/1.64.0/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_fiori_3"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"webxr-ui5": ""}'>
+			</script>
+
+	<link rel="stylesheet"
+		  type="text/css"
+		  href="css/style.css">
+</head>
+
+<body class="sapUiBody"
+	  id="content"
+	  style="background: transparent">
+
+	<script>
+		sap.ui.getCore().attachInit(function () {
+			function startApp() {
+				sap.ui.xmlview({
+					viewName: "webxr-ui5.view.ARAnalytics"
+				}).placeAt("content");
+			}
+			if (/WebXRViewer/.test(navigator.userAgent)) {
+				document.body.classList.add("xrVersion");
+				sap.ui.define(["sap/ui/dom/includeScript"], function (fnIncludeScript) {
+					fnIncludeScript("//mozilla.github.io/three.xr.js/dist/three.xr.js", null, startApp);
+				});
+			} else {
+				document.body.style.backgroundColor = "#2C4E6C";
+				startApp();
+			}
+		});
+	</script>
+</body>
+
+</html>

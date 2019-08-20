@@ -1,0 +1,118 @@
+{
+    "metaData": {
+        "timeSeries": [
+            "2019-05",
+            "2019-06",
+            "2019-07"
+        ],
+        "dimensionConfig": {
+            "size": {
+                "label": "Sales Volume",
+                "key": "salesVolume"
+            },
+            "x": {
+                "label": "Discount",
+                "key": "discount",
+                "unit": "%"
+            },
+            "y": {
+                "label": "Customer Satisfaction",
+                "key": "customerSatisfaction",
+                "unit": "★"
+            },
+            "z": {
+                "label": "Combined MPG",
+                "key": "combinedMpg"
+            }
+        },
+        "minMax": {
+            "salesVolume": {
+                "min": 1,
+                "max": 20
+            },
+            "combinedMpg": {
+                "min": 10,
+                "max": 50
+            },
+            "customerSatisfaction": {
+                "min": 1,
+                "max": 5
+            },
+            "discount": {
+                "min": 5,
+                "max": 16
+            }
+        }
+    },
+    "items": [
+        {
+            "name": "Audi A6",
+            "salesVolume": {
+                "2019-05": 20,
+                "2019-06": 17,
+                "2019-07": 14
+            },
+            "combinedMpg": {
+                "2019-05": 22,
+                "2019-06": 27,
+                "2019-07": 25
+            },
+            "customerSatisfaction": {
+                "2019-05": 5,
+                "2019-06": 4,
+                "2019-07": 5
+            },
+            "discount": {
+                "2019-05": 10,
+                "2019-06": 9,
+                "2019-07": 15
+            }
+        },
+        {
+            "name": "VW Jetta",
+            "salesVolume": {
+                "2019-05": 15,
+                "2019-06": 11,
+                "2019-07": 13
+            },
+            "combinedMpg": {
+                "2019-05": 30,
+                "2019-06": 37,
+                "2019-07": 32
+            },
+            "customerSatisfaction": {
+                "2019-05": 3,
+                "2019-06": 3,
+                "2019-07": 3
+            },
+            "discount": {
+                "2019-05": 5,
+                "2019-06": 6,
+                "2019-07": 7
+            }
+        },
+        {
+            "name": "Audi A4",
+            "salesVolume": {
+                "2019-05": 19,
+                "2019-06": 17,
+                "2019-07": 14
+            },
+            "combinedMpg": {
+                "2019-05": 32,
+                "2019-06": 35,
+                "2019-07": 29
+            },
+            "customerSatisfaction": {
+                "2019-05": 4,
+                "2019-06": 4,
+                "2019-07": 4
+            },
+            "discount": {
+                "2019-05": 15,
+                "2019-06": 12,
+                "2019-07": 13
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+	"name": "webxr-analytics",
+	"productName": "webxr-analytics",
+	"version": "1.0.0",
+	"description": "webxr-analytics",
+	"scripts": {
+		"start": "live-server --open=webapp --watch=webapp"
+	},
+	"author": "christian.grail@sap.com",
+	"dependencies": {
+		"live-server": "^1.2.1"
+	}
+}
