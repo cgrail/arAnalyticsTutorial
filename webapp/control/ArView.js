@@ -83,7 +83,7 @@ sap.ui.define([
 					}
 					animate();
 				}
-			}
+			};
 			if (THREE.WebXRUtils) {
 				THREE.WebXRUtils.getDisplays().then(init);
 			} else {
